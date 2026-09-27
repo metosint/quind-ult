@@ -25,7 +25,7 @@ local KeyWindow = Fluent:CreateWindow({
 
 local KeyTab = KeyWindow:AddTab({ Title = "🔑 Key", Icon = "key" })
 
-KeyTab:AddParagraph({ Title = "🔐 Как получить ключ?", Content = "Ключ можно получить по ссылке " })
+KeyTab:AddParagraph({ Title = "🔐 Как получить ключ?", Content = "Ключ можно получить по ссылке https://raw.githubusercontent.com/metosint/quind-ult/refs/heads/main/key.txt" })
 
 KeyTab:AddInput("KeyInput", { Title = "🔑 Введите ключ", Default = "", Placeholder = "FREE_..." })
 
@@ -42,7 +42,7 @@ KeyTab:AddButton({ Title = "✅ Проверить ключ", Callback = functio
 end })
 
 KeyTab:AddButton({ Title = "📋 Скопировать ссылку", Callback = function()
-    setclipboard("https://max.ru/u/f9LHodD0cOLFq5pQkWzX9k8mN2vB4tR1sA3wE6yU0iO5pL7jH8gF2dS4aZ9xC1vB")
+    setclipboard("https://raw.githubusercontent.com/metosint/quind-ult/refs/heads/main/key.txt")
     Fluent:Notify({Title="📋 Скопировано", Content="Ссылка скопирована!", Duration=3})
 end })
 
