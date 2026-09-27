@@ -1,6 +1,5 @@
 -- ============================================
 -- QUIND HUB ULTIMATE | UNIVERSAL SCRIPT
--- Key: FREE_e72je18kr27nwu3djq67ja1yw52#quind
 -- ============================================
 
 -- ЗАГРУЗКА FLUENT UI
@@ -26,7 +25,7 @@ local KeyWindow = Fluent:CreateWindow({
 
 local KeyTab = KeyWindow:AddTab({ Title = "🔑 Key", Icon = "key" })
 
-KeyTab:AddParagraph({ Title = "🔐 Как получить ключ?", Content = "Ключ можно получить в MAX по ссылке:\nhttps://max.ru/u/f9LHodD0cOLFq5pQkWzX9k8mN2vB4tR1sA3wE6yU0iO5pL7jH8gF2dS4aZ9xC1vB" })
+KeyTab:AddParagraph({ Title = "🔐 Как получить ключ?", Content = "Ключ можно получить по ссылке " })
 
 KeyTab:AddInput("KeyInput", { Title = "🔑 Введите ключ", Default = "", Placeholder = "FREE_..." })
 
@@ -38,13 +37,13 @@ KeyTab:AddButton({ Title = "✅ Проверить ключ", Callback = functio
         KeyWindow:Destroy()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/metosint/quind-jasg/refs/heads/main/project.lua"))()
     else
-        Fluent:Notify({Title="❌ Ошибка", Content="Неверный ключ! Получите новый в MAX.", Duration=5})
+        Fluent:Notify({Title="❌ Ошибка", Content="Неверный ключ! Получите новый.", Duration=5})
     end
 end })
 
 KeyTab:AddButton({ Title = "📋 Скопировать ссылку", Callback = function()
     setclipboard("https://max.ru/u/f9LHodD0cOLFq5pQkWzX9k8mN2vB4tR1sA3wE6yU0iO5pL7jH8gF2dS4aZ9xC1vB")
-    Fluent:Notify({Title="📋 Скопировано", Content="Ссылка на MAX скопирована!", Duration=3})
+    Fluent:Notify({Title="📋 Скопировано", Content="Ссылка скопирована!", Duration=3})
 end })
 
 -- ЖДЕМ ВВОД КЛЮЧА
